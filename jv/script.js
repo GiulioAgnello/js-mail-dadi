@@ -15,9 +15,9 @@ const userMail = prompt("inserisci la tua email");
 // console.log(mailList.includes(userMail));
 let currentMail;
 for (i = 0; i < mailList.length; i++) {
-  const currentMail = mailList;
+  const currentMail = [i];
   if (userMail === currentMail) {
     const emailpresent = true;
   }
 }
-console.log(emailpresent);
+console.log(currentMail);
