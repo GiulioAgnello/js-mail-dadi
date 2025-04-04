@@ -13,11 +13,16 @@ const mailList = [
 const userMail = prompt("inserisci la tua email");
 
 // console.log(mailList.includes(userMail));
-let currentMail;
+let emailpresent = false;
 for (i = 0; i < mailList.length; i++) {
   const currentMail = [i];
-  if (userMail === currentMail) {
-    const emailpresent = true;
+  if (userMail !== currentMail) {
+    emailpresent = true;
   }
 }
-console.log(currentMail);
+if ((emailpresent = true)) {
+  alert("email presente");
+} else {
+  alert(" email non trovata");
+}
+console.log(emailpresent);
