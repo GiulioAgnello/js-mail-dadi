@@ -10,17 +10,14 @@ const mailList = [
 ];
 // console.table(mailList);
 // chiedo l'email all'utente
-let letouttext;
-userMail = prompt("inserisci la tua email");
+const userMail = prompt("inserisci la tua email");
 
-// cerco nell'array dell'email se presente
-
-for (let i = 0; i < mailList.langht; i++) {
-  currentmail = [i];
-  if (mailList === userMail) {
-    letouttext = "presentes";
-  } else {
-    letouttext = "email non presente";
+// console.log(mailList.includes(userMail));
+let currentMail;
+for (i = 0; i < mailList.length; i++) {
+  const currentMail = mailList;
+  if (userMail === currentMail) {
+    const emailpresent = true;
   }
 }
-console.log(mailList);
+console.log(emailpresent);
